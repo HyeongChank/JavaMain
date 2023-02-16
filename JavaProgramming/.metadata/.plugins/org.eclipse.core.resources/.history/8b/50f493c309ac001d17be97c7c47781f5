@@ -1,0 +1,22 @@
+package DataStructure_Queen;
+
+import java.util.Scanner;
+
+public class Recur {
+
+	
+	static void recur(int n){
+		while(n>0) {
+			recur(n-1);
+			System.out.println(n);
+			
+		}
+	}
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		int n = kb.nextInt();
+		recur(n);
+
+	}
+
+}

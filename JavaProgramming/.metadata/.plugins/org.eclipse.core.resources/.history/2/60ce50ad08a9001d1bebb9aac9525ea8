@@ -1,0 +1,26 @@
+package CodeTest;
+
+public class charAge {
+
+	public static void main(String[] args) {
+		int age = 23;
+
+		String s = Integer.toString(age);
+		char c = 'c';
+		int num = (int)c;
+		System.out.println(num);
+		
+		char b = '1';
+		int bb = (int)b;
+		System.out.println("bb"+bb);
+		String str = Integer.toString(age);
+		char [] charry = str.toCharArray();
+//		for(int i : charry) {
+//			charry[i]+96
+//			
+//		}
+
+
+	}
+
+}

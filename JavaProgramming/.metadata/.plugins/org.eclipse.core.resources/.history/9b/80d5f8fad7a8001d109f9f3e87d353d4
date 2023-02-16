@@ -1,0 +1,14 @@
+package CodeTest;
+
+public class charAge {
+
+	public static void main(String[] args) {
+		char ch = 'b';
+		String str = "abc";
+		
+		int num = Character.getNumericValue(ch);
+		System.out.println(num);
+
+	}
+
+}

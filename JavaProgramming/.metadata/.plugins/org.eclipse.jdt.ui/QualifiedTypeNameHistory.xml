@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.ruby.java.test2.Exam03"/>
+    <fullyQualifiedTypeName name="com.ruby.java.test2.Exam04"/>
+    <fullyQualifiedTypeName name="edu.mission.moneyType"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="javax.lang.model.element.Element"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="DataStructure.Point"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="CodeTest.Stringinterval"/>
+    <fullyQualifiedTypeName name="CodeTest.StringContainString"/>
+    <fullyQualifiedTypeName name="CodeTest.charAge"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+</qualifiedTypeNameHistroy>
