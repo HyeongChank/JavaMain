@@ -1,0 +1,93 @@
+package DataStructure_Queen;
+
+import java.util.ArrayList;
+
+//int top;
+//Point [] data
+//void Push(Point p);
+//Point Pop();
+// }
+// void NextMove(int[] move, int row); // current row에 대한 다음 배치 가능한 모든 column을 조사하고 move[]에 1로 설정
+// boolean CheckMove(int currentRow, int row, int col) //currentRow에 대하여 queen을 (x,y)에 배치 가능하면 true
+//
+//=> backtracking을 stack을 이용하여 push/pop으로 해결하는 것을 보이는 것임
+//
+//-> 가로, 세로, 대각선에 대한 충돌 체크 함수 코딩
+//boolean CheckMove(x,y) {
+//checkRow(x);
+//checkCol(y);
+//checkDiagSW(x,y); //x++, y-- or x--, y++ where 0<= x,y <= 7
+//checkDiagSE(x,y); //x++, y++ or x--, y--
+//}
+
+public class Queen8 {
+	static int [] position = new int[3];
+	static int a =0;
+	static void print() {
+		for(int i=0;i<3;i++) {
+			System.out.print(position[i]);
+		}
+		System.out.println();
+	}
+	static void set(int i) {
+		for(int j =0; j<3; j++) {
+			position[i] =j;
+			if(i==2) {
+				print();
+			}
+			else {
+				set(i+1);
+				System.out.println(a++);
+			}
+		}
+	}
+    public static void main(String[] args) {
+        set(0);
+    }
+}
+//	static int index = 0;
+//	int row = 0;
+//	int column = 0;
+//
+////		
+////		
+////		
+////		
+////		
+//
+//
+////	
+////	
+//
+//	static int checkcol(int x, int y) {
+//		if (y == index - 1 || y == index || y == index + 1) {
+//			return checkcol(x, y + 1);
+//		} else {
+//			return checkcol(x + 1, y);
+//		}
+//	}
+//
+//	static int checkrow(int x, int y) {
+//		if(y)
+//	}
+////	
+////	
+////	
+//
+//	static int[][] array(int x, int y){
+//		int [][] array = new int[x][y];
+//		for(int i=0; i<x;i++) {
+//			for(int j=0; j<y; j++) {
+//				System.out.print(array[i][j]);
+//			}
+//			System.out.println();
+//		}
+//		return array;
+//	}
+//	public static void main(String[] args) {
+//
+//		array(8, 8);
+//
+//	}
+//
+//}

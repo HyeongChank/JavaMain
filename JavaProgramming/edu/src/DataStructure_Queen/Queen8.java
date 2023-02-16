@@ -1,7 +1,10 @@
 package DataStructure_Queen;
 
 import java.util.ArrayList;
-
+import java.util.Stack;
+public class Queen8 {
+	
+	
 //int top;
 //Point [] data
 //void Push(Point p);
@@ -14,118 +17,141 @@ import java.util.ArrayList;
 //
 //-> 가로, 세로, 대각선에 대한 충돌 체크 함수 코딩
 //boolean CheckMove(x,y) {
+	
+//	static boolean checkcol(int x, int y) {
+//		if (y == index - 1 || y == index || y == index + 1) {
+//			return false;
+//		} else {
+//			return true;
+//		}
+//	}
 //checkRow(x);
 //checkCol(y);
 //checkDiagSW(x,y); //x++, y-- or x--, y++ where 0<= x,y <= 7
 //checkDiagSE(x,y); //x++, y++ or x--, y--
 //}
 
-public class Queen8 {
-    private static class Position {
-        int row;
-        int col;
 
-        public Position(int row, int col) {
-            this.row = row;
-            this.col = col;
-        }
-    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
-    public static void main(String[] args) {
-        int n = 8;
-        int[] board = new int[n];
-        Position[] stack = new Position[n];
-        int top = -1;
-        stack[++top] = new Position(0, 0);
-
-        while (top >= 0) {
-            Position pos = stack[top--];
-            int row = pos.row;
-            int col = pos.col;
-
-            // 현재 위치에서 유효한 열을 찾아서 퀸을 놓음
-            while (col < n) {
-                if (isSafe(board, row, col)) {
-                    board[row] = col;
-                    if (row == n - 1) {
-                        printBoard(board);
-                    } else {
-                        stack[++top] = new Position(row + 1, 0);
-                    }
-                    break;
-                }
-                col++;
-            }
-        }
-    }
-
-    private static boolean isSafe(int[] board, int row, int col) {
-        // 현재 열에서 이전 행들과 같은 열에 있거나 대각선에 있는지 확인
-        for (int i = 0; i < row; i++) {
-            if (board[i] == col || Math.abs(board[i] - col) == Math.abs(i - row)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private static void printBoard(int[] board) {
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board.length; j++) {
-                if (board[i] == j) {
-                    System.out.print("Q ");
-                } else {
-                    System.out.print("- ");
-                }
-            }
-            System.out.println();
-        }
-        System.out.println();
-    }
-}
-//	static int index = 0;
-//	int row = 0;
-//	int column = 0;
+//	static int index = -2;
+//	static int [] position = new int[4];
+//	static ArrayList<Integer> list = new ArrayList<Integer>();
+//	int x = 0;
+//	int y =0;
 //
-////		
-////		
-////		
-////		
-////		
-//
-//
-////	
-////	
-//
-//	static int checkcol(int x, int y) {
-//		if (y == index - 1 || y == index || y == index + 1) {
-//			return checkcol(x, y + 1);
-//		} else {
-//			return checkcol(x + 1, y);
+//	
+//		static int columngo(int x, int y) {
+//		if(checkcol(x,y) == true) {
+//			rowgo(x,y);
 //		}
+//		if(checkcol(x,y) == false) {
+//			position[y]=0;
+//			++y;
+//			columngo(x,y);
+//		}
+//		if(y==4) {
+//			rowgo(x-1,0);
+//		}
+//		return y;
 //	}
-//
-//	static int checkrow(int x, int y) {
-//		if(y)
-//	}
-////	
-////	
-////	
-//
-//	static int[][] array(int x, int y){
-//		int [][] array = new int[x][y];
-//		for(int i=0; i<x;i++) {
-//			for(int j=0; j<y; j++) {
-//				System.out.print(array[i][j]);
+//	
+//	static int rowgo(int x, int y) {
+//		
+//		if(checkcol(x, y) == true) {
+//			while(true) {
+//				int k=0;
+//				position[k] = 0;
+//				k++;
+//				if(k==position.length) {
+//					break;
+//				}
+//			}
+//			position[y] = 1;
+//			for(int i : position) {
+//				System.out.print(i);
 //			}
 //			System.out.println();
+//			++x;
+//			index = y;
+//			y=0;
+//			columngo(x,y);
 //		}
-//		return array;
+//		if(checkcol(x,y) == false) {
+//			checkcol(x-1, 0);
+//		}
+//		return x;
 //	}
-//	public static void main(String[] args) {
+	static int index =-2;
+	static boolean checkcol(int [] arr, int y) {
+		if (y == index - 1 || y == index || y == index + 1 ) {
+			return false;
+		}
+
+		else {
+			return true;
+		}
+		
+					
+	}
+	
+
+	
+
+	public static void main(String[] args) {
+		int row=0; ;
+		int column=0;
+		int x=0;
+		int y=0;
+		int num=0;
+		int [][] arr = new int[4][4];
+		Stack<Integer> stack = new Stack<Integer>();
+//		while(row<4) {
+//			column=0;
+//			while(column<4) {
+//				if(checkcol(arr, y)==false) {
+//					stack.push(0);
+//					y++;
+//					column++;
+//				}
+//				else if(y==3) {
+//					stack.pop();
+//					stack.pop();
+//					stack.pop();
+//					stack.pop();
+//					y=0;
+//				}
+//				else{
+//					stack.push(1);
+//					index =y;
+//					y=0;
+//					row++;
+//					column++;
+//				}
+//				
+//			}
+//			System.out.print(stack);
+//		}
 //
-//		array(8, 8);
-//
-//	}
-//
-//}
+		for(int i=0; i<arr.length;i++) {
+			for(int j=0; j<arr.length; j++) {
+				arr[i][j] = 0;
+				System.out.print(arr[i][j]);
+			}
+			System.out.println();
+		}
+		
+		
+	}
+}

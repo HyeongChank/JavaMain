@@ -47,6 +47,7 @@ public class Queue {
 			for (int i : data) {
 				System.out.print(i);
 			}
+			System.out.println();
 		}
 		return num;
 	}

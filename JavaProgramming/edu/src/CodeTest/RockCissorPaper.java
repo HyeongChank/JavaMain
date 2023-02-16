@@ -7,12 +7,20 @@ public class RockCissorPaper {
 		
 		String rsp = "205";
 		String[] spl = rsp.split("");
-		for(String i : spl) {
-			if(i=="2") {
-			
+		char [] str = new char[spl.length];
+		for(int i=0; i<spl.length; i++) {
+			if(spl[i].equals("2")) {
+				str[i] = '0';
+			}
+			else if(spl[i].equals("0")) {
+				str[i] = '5';
+			}
+			else if(spl[i].equals("5")) {
+				str[i] = '2';
 			}
 		}
-			
+		String answer = new String(str);
+		System.out.println(answer);
 	}
 
 }
