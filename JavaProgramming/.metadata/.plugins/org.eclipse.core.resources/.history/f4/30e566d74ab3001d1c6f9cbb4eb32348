@@ -1,0 +1,13 @@
+package CodeTest;
+
+public class SqrtYN {
+
+	public static void main(String[] args) {
+         int answer = 0;
+         int n = 144;
+         
+         Math.sqrt(n)
+
+	}
+
+}

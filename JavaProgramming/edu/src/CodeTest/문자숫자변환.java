@@ -8,6 +8,8 @@ public class 문자숫자변환 {
 		char e = 'a';
 		String f = "fd";
 		String abc ;
+		String cd = String.valueOf(n);
+		System.out.println("cd"+ cd);
 		char [] alpabet = new char[3];
 		//숫자 문자열 변환
 		String b = String.valueOf(n);
