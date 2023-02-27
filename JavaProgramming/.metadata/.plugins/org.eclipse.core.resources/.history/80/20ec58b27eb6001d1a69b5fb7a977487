@@ -48,14 +48,12 @@ class SimpleObject {
 
 class LinkedList2 {
 	
-	String [] str1 = new String[5];
-	String [] str2 = new String[5];
-	
+
 	static SimpleObject arr = new SimpleObject();
-	public static boolean Delete(String str1) // delete the element
+	public static boolean Delete(int element) // delete the element
 	{
 		for (int i = 0; i < arr.length; i++) {
-			if (arr == str1) {
+			if (arr == element) {
 				arr[i] = 0;
 				return true;
 			}
@@ -67,26 +65,29 @@ class LinkedList2 {
 	}
 
 	public void Show() { // 전체 리스트를 순서대로 출력한다.
-		System.out.print(arr);
+		for (int i : arr) {
+			System.out.print(i + "  ");
+		}
+		System.out.println();
 	}
 	public static void Add(String no, String name) // 임의 값을 삽입할 때 리스트가 오름차순으로 정렬이 되도록 한다
 	{
-//		if (num < arr.length) {
+		if (num < arr.length) {
 			arr.setNo(no);
 			arr.setName(name);
 			
-//		}
+		}
 	}
 
-//	public static boolean Search(int data) { // 전체 리스트를 순서대로 출력한다.
-//		for (int i = 0; i < arr.length; i++) {
-//			if (arr[i] == data) {
-//				return true;
-//			}
-//
-//		}
-//		return false;
-//	}
+	public static boolean Search(int data) { // 전체 리스트를 순서대로 출력한다.
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == data) {
+				return true;
+			}
+
+		}
+		return false;
+	}
 
 
 }
@@ -151,25 +152,25 @@ public class LinkedObject {
 				lo.length++;
 				l.Add(no, name);
 				break;
-//			case Delete: // 머리 노드 삭제
-//				int num = sc.nextInt();
-//				if (LinkedList2.Delete(num) == true)
-//					System.out.println("삭제된 데이터는 " + num);
-//				else
-//					System.out.println("데이터 없음");
-//				break;
+			case Delete: // 머리 노드 삭제
+				int num = sc.nextInt();
+				if (LinkedList2.Delete(num) == true)
+					System.out.println("삭제된 데이터는 " + num);
+				else
+					System.out.println("데이터 없음");
+				break;
 			case Show: // 꼬리 노드 삭제
 				l.Show();
 				break;
-//			case Search: // 회원 번호 검색
-//				int n = sc.nextInt();
-//				if (LinkedList2.Search(n) == false)
-//					System.out.println("검색 값 = " + n + "데이터가 없습니다.");
-//				else
-//					System.out.println("검색 값 = " + n + "데이터가 존재합니다.");
-//				break;
-//			case Exit: // 꼬리 노드 삭제
-//				break;
+			case Search: // 회원 번호 검색
+				int n = sc.nextInt();
+				if (LinkedList2.Search(n) == false)
+					System.out.println("검색 값 = " + n + "데이터가 없습니다.");
+				else
+					System.out.println("검색 값 = " + n + "데이터가 존재합니다.");
+				break;
+			case Exit: // 꼬리 노드 삭제
+				break;
 			}
 		} while (menu != Menu.Exit);
 	}
