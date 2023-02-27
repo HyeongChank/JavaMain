@@ -16,12 +16,10 @@ public class SelectSort_0222 {
 				}
 				
 			}
-
 		}
 		return arr;
 	}
-	
-	
+
 	static void print(int [] arr) {
 		int [] result = arr;
 		for(int i=0; i<result.length; i++) {
@@ -34,5 +32,4 @@ public class SelectSort_0222 {
 
 		print(swap(basic));
 	}
-
 }

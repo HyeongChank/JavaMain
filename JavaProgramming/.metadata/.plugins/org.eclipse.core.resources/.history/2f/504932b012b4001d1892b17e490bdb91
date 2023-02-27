@@ -1,0 +1,15 @@
+package CodeTest;
+
+public class Multiplication {
+
+	public static void main(String[] args) {
+		int n = 2;
+		int t = 10;
+		int answer = 0;
+		
+		System.out.println(n**t);
+		
+
+	}
+
+}

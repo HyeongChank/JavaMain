@@ -1,21 +1,15 @@
 package DataStructure_Queen;
 
-	
-	
 class Point{
 	private int x;
 	private int y;
-
-	
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;
-		
 	}
 	public String toString() {
 		return "<" + x + "," + y + ">";
 	}
-	
 	public int getX() {
 		return x;
 	}
@@ -25,7 +19,6 @@ class Point{
 	public int getY() {
 		return y;
 	}
-	
 	public void setY(int y) {
 		this.y = y;
 	}
@@ -53,12 +46,7 @@ class MyStack{
 	public Point pop() {
 		return p[--top];
 	}
-
-	
 }
-
-
-
 
 public class Queen8_final {
 	private static int row = 8 ;
@@ -73,7 +61,6 @@ public class Queen8_final {
 		if(!checkDiagSE(x,y)) return false; //x++, y++ or x--, y--
 			return true;
 	}
-	
 	public static boolean checkRow(int x) {
 		for(int i=0; i<row; i++) {
 			if(data[x][i] ==1) {
@@ -120,8 +107,6 @@ public class Queen8_final {
 		while(sx>=0 && sx<row && sy>=0 && sy<column) {
 			if(data[sx][sy] == 1) 
 				return false;
-				
-			
 			sx++;
 			sy++;
 		}
@@ -137,7 +122,9 @@ public class Queen8_final {
 		return true;
 	}
 	
-	
+	static void NextMove() {
+		
+	}
 
 	
 	

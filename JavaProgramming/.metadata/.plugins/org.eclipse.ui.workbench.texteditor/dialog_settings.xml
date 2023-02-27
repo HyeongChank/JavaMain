@@ -10,8 +10,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="package Chap8_List;"/>
 		<list key="findhistory">
+			<item value="package Chap8_List;"/>
+			<item value="mazeExit"/>
+			<item value="maze"/>
 			<item value="package CodeTest;"/>
 			<item value="al"/>
 			<item value="out"/>

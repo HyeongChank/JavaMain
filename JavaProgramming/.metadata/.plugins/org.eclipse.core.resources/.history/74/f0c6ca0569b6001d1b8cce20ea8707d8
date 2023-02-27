@@ -1,0 +1,14 @@
+package DataStructure_Linkedlist;
+
+import java.util.LinkedList;
+
+public class Linkedlist01 {
+	public static void main(String[] args) {
+
+		LinkedList<String> lin = LinkedList<String>();
+		
+	
+
+	
+	
+}
