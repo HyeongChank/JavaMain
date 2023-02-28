@@ -83,6 +83,8 @@ class LinkedList {
 		}
 		return false;
 	}
+
+
 }
 public class Linkedlist22 {
 	enum Menu {

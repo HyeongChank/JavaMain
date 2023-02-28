@@ -1,0 +1,75 @@
+package DataStructure_Linkedlist;
+
+import java.util.Scanner;
+
+class noname{
+	private String no;
+	private String name;
+	public noname(String no, String name) {
+		this.no = no;
+		this.name = name;
+	}
+	public String getNo() {
+		return no;
+	}
+	public void setNo(String no) {
+		this.no = no;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "noname [no=" + no + ", name=" + name + "]";
+	}
+
+	
+}
+
+public class GetSetprac {
+	static Scanner kb = new Scanner(System.in);
+
+	static String [] s1 = new String[5];
+	static String [] s2 = new String[5];
+	
+	public static void Storage(String str, String str2) {
+		int num = Integer.valueOf(str);
+		s1[num] = str;
+		s2[num++] = str2;
+			
+		
+		
+		for(int i=0; i<s1.length;i++) {
+			System.out.println(s1[i] + "번 " + s2[i]);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		noname str = new noname(null, null);
+		System.out.println("선택");
+		int ch = kb.nextInt();
+		
+		do {
+			switch(ch) {
+			
+			case 1 :
+				System.out.println("추가할 인덱스");
+				String no = kb.next();
+				System.out.println("추가할 내용");
+				String name = kb.next();
+				str.setNo(no); 
+				str.setName(name);
+				System.out.println(str.toString());
+				Storage(no, name);
+				
+			case 2 : System.out.println("실행이 됨");
+			num++;
+			}
+		}	while(num<s1.length); 
+	}
+
+}

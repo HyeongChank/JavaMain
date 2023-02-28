@@ -1,0 +1,39 @@
+package DataStructure_Linkedlist;
+
+
+class noname{
+	private String no;
+	private String name;
+	public noname(String no, String name) {
+		this.no = no;
+		this.name = name;
+	}
+	public String getNo() {
+		return no;
+	}
+	public void setNo(String no) {
+		this.no = no;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+}
+
+public class GetSetprac {
+
+	public static void main(String[] args) {
+		noname str = new noname(null, null);
+		str.setNo("3"); 
+		str.setName("hyeon");
+		str.setNo("4"); 
+		str.setName("22hyeon");
+		System.out.println(str.getNo());
+		
+	}
+
+}

@@ -1,0 +1,63 @@
+package DataStructure_Linkedlist;
+
+import java.util.Scanner;
+
+class noname{
+	private String no;
+	private String name;
+	public noname(String no, String name) {
+		this.no = no;
+		this.name = name;
+	}
+	public String getNo() {
+		return no;
+	}
+	public void setNo(String no) {
+		this.no = no;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "noname [no=" + no + ", name=" + name + "]";
+	}
+
+	
+}
+
+public class GetSetprac {
+	static Scanner kb = new Scanner(System.in);
+	static String no = kb.nextLine();
+	static String name = kb.nextLine();
+	public static void Storage(String str, String str2) {
+		str = no;
+		str2 = name;
+		String [] s1 = new String[5];
+		String [] s2 = new String[5];
+		int num=0;
+		s1[num] = str;
+		s2[num++] = str2;
+			
+		
+		
+		for(int i=0; i<s1.length;i++) {
+			System.out.println(s1[i] + " " + s2[i]);
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		noname str = new noname(null, null);
+
+		str.setNo(no); 
+		str.setName(name);
+		
+		Storage(no, name);
+		
+	}
+
+}
