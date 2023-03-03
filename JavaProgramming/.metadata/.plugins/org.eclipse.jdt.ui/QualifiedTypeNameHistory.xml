@@ -24,4 +24,5 @@
     <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="DataStructure_StrackQueue.Queue"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="DataStructure_tree.Node"/>
 </qualifiedTypeNameHistroy>

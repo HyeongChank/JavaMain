@@ -34,10 +34,11 @@ public class LinkedList_final {
 			}
 		}
 		System.out.println(str + "번 " + str2 + "삭제");
-		for(int i =0; i< s1.length; i++) {
-			System.out.println(s1[i] + "번 " + s2[i]);
-			
-		}
+		Print();
+//		for(int i =0; i< s1.length; i++) {
+//			System.out.println(s1[i] + "번 " + s2[i]);
+//			
+//		}
 		System.out.println();
 		
 	}
@@ -66,16 +67,24 @@ public class LinkedList_final {
 			sq++;
 			
 		}
-		for(int i =0 ; i< s1.length; i++) {
-			System.out.println(s1[i] +"번 " + s2[i]);
-		}
+		Print();
+//		for(int i =0 ; i< s1.length; i++) {
+//			System.out.println(s1[i] +"번 " + s2[i]);
+//		}
 	}
 	public static void Print() {
-		for(int i=0; i<s1.length; i++) {
-			System.out.print(s1[i] + "번 ");
-			System.out.println(s2[i]);
-			
+		int i=0;
+		while(i<5) {
+			if(s1[i] ==s) {
+				i++;
+				continue;
+			}
+			else {
+				System.out.println(s1[i] +"번 " + s2[i]);
+				i++;
+			}
 		}
+
 	}
 	
 	public static void main(String[] args) {

@@ -5,14 +5,29 @@ public class Emergency_0215 {
 	public static void main(String[] args) {
 		int emergency[] = {3,76,24};
 		int [] answer = new int[emergency.length];
-		int max =0;
-		for(int i =0 ; i< answer.length; i++) {
-			for(int j =i ; j<emergency.length; j++) {
-				if(emergency[j] > max) {
-					emergency[j] = i+1;
+		int [] a1 = new int[emergency.length];
+		float [] a2 = new float[emergency.length];
+		for(int i =0;i< emergency.length;i++) {
+			a1[i] = i;
+			a2[i] = emergency[i];
+		}
+		int [] e2 = emergency;
+		
+		int min =100;
+		float temp =1;
+		int locate =0;
+		for(int i=0; i<emergency.length;i++) {
+			for(int j =0; j<emergency.length;j++) {
+				if(emergency[j]<min) {
+					locate = j;
 				}
 			}
-			max=0;
+			float[locate] = 0.01;
+			
+			
+			answer[locate] =0;
+			temp++;
+			
 		}
 	}
 
