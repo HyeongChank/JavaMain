@@ -161,14 +161,12 @@ public class Chap9_Test_BinaryTreeInt {
 					for (int ix = 0; ix < count; ix++) {
 						double d = Math.random();
 						input[ix] = (int) (d * 30);
-						mt.MyT((int) (d * 30));
+						mt((int) (d * 30));
 						System.out.print(input[ix] + " " );
 						
 						t.insert(input[ix]);
 					}
-					for(int i=0; i<arr; i++) {
-						
-					}
+					
 //					for (int i = 0; i < count; i++) {
 //						if (t.insert(input[i]) == false)
 //							System.out.println("Insert Duplicated data");

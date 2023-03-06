@@ -1,6 +1,6 @@
 package CodeTest;
 
-public class 문자숫자변환 {
+public class _문자숫자변환 {
 
 	public static void main(String[] args) {
 		int n = 12345;
