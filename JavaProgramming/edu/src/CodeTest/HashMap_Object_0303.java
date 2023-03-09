@@ -61,8 +61,8 @@ public class HashMap_Object_0303 {
 //		System.out.println(hm);
 //		System.out.println("3"+hm.get(3));
 		
-		Node []node = new Node[5];
-		Node no = new Node();
+		Nodeprac []node = new Nodeprac[5];
+		Nodeprac no = new Nodeprac();
 		
 		no.Store(3, "cks");
 		no.Store(4, "dfd");
