@@ -4,40 +4,58 @@ package CodeTest;
 import java.util.Scanner;
 
 
-class Node3 {
-    private int data;            
-    private Node3 next;        //다음노드
+class Node4<T, V> {
+	private T num;
+	private V data;
+    private Node4 next;        //다음노드
 
-    Node3(int data, Node3 next) {
+    Node4(T num, V data, Node4 next) {
+    	this.num = num;
         this.data = data;
         this.next = next;
     }
+    Node4(){
+    	
+    }
+    
 
-	public Node3 getNext() {
+	public T getNum() {
+		return num;
+	}
+
+	public void setNum(T num) {
+		this.num = num;
+	}
+
+	public Node4 getNext() {
 		return next;
 	}
 
-	public void setNext(Node3 next) {
+	public void setNext(Node4 next) {
 		this.next = next;
 	}
 
-	public int getData() {
+	public V getData() {
 		return data;
 	}
 
-	public void setData(int data) {
+	public void setData(V data) {
 		this.data = data;
 	}
+
+
     
 }
-public class _LinkedListOfficial {
+public class _LinkedListObject {
 
 	public static void main(String args[]) {
-
+		Node4 nd = new Node4();
+		
+		
 		Scanner kb = new Scanner(System.in);
 		while(true){
 			System.out.println("아래 메뉴 중 선택");
-			System.out.println("1.추가 2.삭제 3.검색 4.print 5.맨 앞에 추가");
+			System.out.println("1.추가 2.삭제 3.검색 4.print");
 			int ch = kb.nextInt();
 			switch(ch) {
 				case 1 :
@@ -61,40 +79,19 @@ public class _LinkedListOfficial {
 					System.out.println("출력");
 					print();
 					break;
-					
-				case 5 :
-					System.out.println("맨 앞에 추가");
-					int nof = kb.nextInt();
-					addFinal(nof);
-					break;
 			}
 		}			
 	}
- 	static Node3 head;
- 	static Node3 tail;
- 	
-	public static void addFirst(int k) {
-		Node3 n = head;      // 삽입 전의 머리 노드
-		head = new Node3(k, n);
-	}
-	public static void addFinal(int k) {
-		Node3 f = head;
-		while(true) {
-			if(f.getNext() != null) {
-				f = f.getNext();
-			}
-			else {
-				f = f.getNext();
-				head = new Node3(k,f);
-				break;
-				
-			}
-		}
-	}
+ 	static Node4 head;
 
+ 	
+	public static <T> void addFirst(T k) {
+		Node4 n = head;      // 삽입 전의 머리 노드
+		head = new Node4(k, n);
+	}
 	
 	public static void search(int k) {
-		Node3 sp = head;
+		Node4 sp = head;
 		while(sp != null) {
 			
 			if(sp.getData() == k) {
@@ -115,7 +112,7 @@ public class _LinkedListOfficial {
 		}
 	}
 	public static void print() {
-		Node3 np = head;
+		Node4 np = head;
 		while (np != null) {
 			System.out.print(np.getData());
 			System.out.print("  ");

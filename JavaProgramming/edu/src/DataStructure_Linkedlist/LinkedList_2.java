@@ -2,7 +2,7 @@ package DataStructure_Linkedlist;
 
 import java.util.Scanner;
 
-public class LinkedList_Object {
+public class LinkedList_2 {
 	static Scanner kb = new Scanner(System.in);
 	static int size =0;
 	static String [] s1 = new String[5];
@@ -32,10 +32,7 @@ public class LinkedList_Object {
 		}
 		System.out.println(str + "번 " + str2 + "삭제");
 		Print();
-//		for(int i =0; i< s1.length; i++) {
-//			System.out.println(s1[i] + "번 " + s2[i]);
-//			
-//		}
+
 		System.out.println();
 	}
 	public static void Search(String str) {
@@ -61,12 +58,8 @@ public class LinkedList_Object {
 				break;
 			}
 			sq++;
-			
 		}
 		Print();
-//		for(int i =0 ; i< s1.length; i++) {
-//			System.out.println(s1[i] +"번 " + s2[i]);
-//		}
 	}
 	public static void Print() {
 		int i=0;
@@ -80,16 +73,12 @@ public class LinkedList_Object {
 				i++;
 			}
 		}
-
 	}
-	
 	public static void main(String[] args) {
 		for(int i =0 ; i<s1.length; i++) {
 			s1[i] = s;
 			s2[i] = s;
 		}
-
-		
 		while(size<=s1.length){
 			System.out.println("아래 메뉴 중 선택");
 			System.out.println("1.인덱스사용 추가 2.오류확인 3.삭제 4.검색 5.빈인덱스 자동추가 6.print");
