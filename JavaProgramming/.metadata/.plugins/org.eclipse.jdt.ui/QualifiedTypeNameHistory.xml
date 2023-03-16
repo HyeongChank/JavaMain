@@ -26,4 +26,5 @@
     <fullyQualifiedTypeName name="DataStructure_StrackQueue.Queue"/>
     <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="CodeTest.Nodeprac"/>
+    <fullyQualifiedTypeName name="javax.management.ValueExp"/>
 </qualifiedTypeNameHistroy>
