@@ -15,7 +15,6 @@
     <fullyQualifiedTypeName name="CodeTest.Stringinterval"/>
     <fullyQualifiedTypeName name="CodeTest.StringContainString"/>
     <fullyQualifiedTypeName name="CodeTest.charAge"/>
-    <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="DataStructure_Queen.Point"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
@@ -33,5 +32,6 @@
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
 </qualifiedTypeNameHistroy>

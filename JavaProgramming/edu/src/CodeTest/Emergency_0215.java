@@ -22,8 +22,7 @@ public class Emergency_0215 {
 					locate = j;
 				}
 			}
-			float[locate] = 0.01;
-			
+	
 			
 			answer[locate] =0;
 			temp++;
