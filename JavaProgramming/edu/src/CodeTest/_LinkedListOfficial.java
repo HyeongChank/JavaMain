@@ -75,7 +75,9 @@ public class _LinkedListOfficial {
  	
 	public static void addFirst(int k) {
 		Node3 n = head;      // 삽입 전의 머리 노드
+		// n에서 여태까지 축적된 head를 받고 이를 다시 head의 next에 그대로 넣음으로써 node 연결
 		head = new Node3(k, n);
+		
 	}
 	public static void addFinal(int k) {
 		Node3 f = head;
